@@ -67,7 +67,7 @@ public class CAcercade {
         }
         
         Acercade acercade = new Acercade(
-                dtoacercade.getNombreA(), dtoacercade.getDescripcionA(), dtoacercade.getTituloA() 
+                dtoacercade.getNombreA(), dtoacercade.getDescripcionA(), dtoacercade.getTituloA(), dtoacercade.getFotoA() 
         );
         sAcercade.save(acercade);
         return new ResponseEntity(new Mensaje("Información creada"), HttpStatus.OK);
@@ -90,6 +90,7 @@ public class CAcercade {
         acercade.setNombreA(dtoacerca.getNombreA());
         acercade.setDescripcionA((dtoacerca.getDescripcionA()));
         acercade.setTituloA((dtoacerca.getTituloA()));
+        acercade.setFotoA((dtoacerca.getFotoA()));
         
         sAcercade.save(acercade);
         return new ResponseEntity(new Mensaje("Información actualizada"), HttpStatus.OK);

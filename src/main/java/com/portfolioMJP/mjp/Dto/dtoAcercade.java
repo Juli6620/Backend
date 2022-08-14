@@ -14,14 +14,18 @@ public class dtoAcercade {
     private String descripcionA;
     @NotBlank
     private String tituloA;
-
+@NotBlank
+    private String fotoA;
+    
+    
     public dtoAcercade() {
     }
 
-    public dtoAcercade(String nombreA, String descripcionA, String tituloA) {
+    public dtoAcercade(String nombreA, String descripcionA, String tituloA, String fotoA) {
         this.nombreA = nombreA;
         this.descripcionA = descripcionA;
         this.tituloA = tituloA;
+        this.fotoA = fotoA;
     }
 
     public String getNombreA() {
@@ -47,6 +51,13 @@ public class dtoAcercade {
     public void setTituloA(String tituloA) {
         this.tituloA = tituloA;
     }
-    
-    
+
+    public String getFotoA() {
+        return fotoA;
+    }
+
+    public void setFotoA(String fotoA) {
+        this.fotoA = fotoA;
+    }
+
 }

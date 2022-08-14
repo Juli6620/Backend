@@ -18,14 +18,16 @@ public class Acercade {
     private String nombreA;
     private String descripcionA;
     private String tituloA;
+    private String fotoA;
 
     public Acercade() {
     }
 
-    public Acercade(String nombreA, String descripcionA, String tituloA) {
+    public Acercade(String nombreA, String descripcionA, String tituloA, String fotoA) {
         this.nombreA = nombreA;
         this.descripcionA = descripcionA;
         this.tituloA = tituloA;
+        this.fotoA = fotoA;
     }
 
     public int getId() {
@@ -59,5 +61,15 @@ public class Acercade {
     public void setTituloA(String tituloA) {
         this.tituloA = tituloA;
     }
+
+    public String getFotoA() {
+        return fotoA;
+    }
+
+    public void setFotoA(String fotoA) {
+        this.fotoA = fotoA;
+    }
+
+    
 
 }
