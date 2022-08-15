@@ -27,8 +27,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/banner")
-@CrossOrigin(origins = "https://portfoliomjp-40113.web.app")
+@RequestMapping("/banner/")
+@CrossOrigin(origins = "https://portfoliomjp-40113.web.app/banner/")
 public class CBanner{
     @Autowired
     SBanner sBanner;
